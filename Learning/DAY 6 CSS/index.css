@@ -6,6 +6,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    gap: 2px;
 }
 
 h1{
