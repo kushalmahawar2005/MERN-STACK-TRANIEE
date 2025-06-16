@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trail</title>
+    <link rel="stylesheet" href="demo.css">
+</head> 
+<body>
+   
+    
+  <u>  <b style = "font-size : 30px";>KUSHAL MAHAWAR</b>  </u>
+    <BR>
+    <em>Akshat</em>
+    <div>
+
+        <h3>Fruits</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            </ul>
+            <ol>
+                <li>EXPREE.JS</li>
+                <li>Mongodb</li>
+                <li>MySql</li>
+                <li>position</li>
+            </ol>
+
+            <a href = "https://bansalhospital.com/motor-neuron-disease-symptoms-causes-treatment/"target = "_main">Click here to learn more about Motor Neuron Disease</a>
+        
+            <table border = "1">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
+                <tr>
+                    <td>Kushal</td>
+                    <td>20</td>
+                    <td>Jaipur</td>
+                </tr>
+                <tr>
+                    <td>Dev</td>
+                    <td>21</td>
+                    <td>Ajmer</td>
+                </tr>
+                <tr>
+                    <td>Akshat</td>
+                    <td>20</td>
+                    <td>Jaipur</td>
+                        
+
+                    </td>
+                </tr>
+            </table>
+<h3>Position Absolute</h3>
+<div id = "car1" >CAR1</div>
+<div id = "car2" >CAR2</div>
+<div id = "car3" >CAR3</div>
+
+
+<h4>Relative</h4>
+<div id ="BOX" >
+    <div id = "innerBox"></div>
+</div>
+
+<form>
+    <label for ="name">name</label>
+    <input type=" text " id = "name" name = "name" placeholder ="Enter your name" requeired>
+    <br>
+    <label for ="email"> Email </label>
+    <input type ="Email" id = "email" name = "email" placeholder = "Enter Your Email" required>
+    <br>
+    <label for = "Password">Password</label>
+    <input type = "Password" id = "Password" name = "Password" placeholder = "Enter Your Password" required>
+    <br>
+    <label for = "confirmPassword">Confirm Password</label>
+    <input type = "Password" id = "confirmPassword" name = "confirmPassword" placeholder = "Confirm Your Password" required>        
+    <br>
+
+</form>
+
+
+    <p id = "Demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ad expedita molestias sapiente similique explicabo? Pariatur accusamus beatae, temporibus expedita quisquam placeat eligendi blanditiis illo molestiae laborum, enim voluptatibus fugit!</p>
+    </div>
+    <hr>
+    <h1 class = "main"> </h1>
+        <iframe id = "video" src ="kushal.mp4"
+        width ="240" height = "135"
+        frameborder="0"allowfullscreen> </iframe>
+  <h2>Live Camera Feed with On/Off Control</h2>
+
+  <video id="camera" width="640" height="480" autoplay></video><br><br>
+
+  <button onclick="startCamera()">Start Camera</button>
+  <button onclick="stopCamera()">Stop Camera</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    let stream; // store the media stream globally
+
+    async function startCamera() {
+      try {
+        stream = await navigator.mediaDevices.getUserMedia({ video: true });
+        document.getElementById('camera').srcObject = stream;
+      } catch (error) {
+        console.error("Camera access denied or error:", error);
+        alert("Camera access is required.");
+      }
+    }
+
+    function stopCamera() {
+      if (stream) {
+        let tracks = stream.getTracks();
+        tracks.forEach(track => track.stop()); // stop all tracks (video/audio)
+        document.getElementById('camera').srcObject = null; // clear the video
+      }
+    }
+  </script>
+</body>
+</html>

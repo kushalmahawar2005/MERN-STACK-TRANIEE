@@ -1,0 +1,41 @@
+1. Undertsanding css
+2. Making css file
+3. Undertsanding linking
+4. css boiler plate 
+5. Undertsand css writing way 
+6. Understanding Width, height
+7. Undertanding units, px and %
+8.Understanding margin padding - 2 element ke bich me space  
+/padding - Ek hi element ke andar ka space 
+9. Understanding background image and things related to it 
+10.undertsanding position abosulte
+11.Understanding flexbox
+
+
+
+
+
+# for id 
+. for class
+h1 for tag 
+
+position : aboslute matlb koi bhi object ko uthana jisesee dusera object ageee aa jaye 
+
+For media Device ACCESS 
+
+
+
+display : flex ka use karte hai jab ek parent ke diff diff child ho or unka order change karena ho to diplay flex ka use karte hai 
+or justify-content : center ka use karte hai to sabhi child ko center me rakh deta hai
+ya koi or poition me lana ho to aisa ok 
+<!-- <script>
+    // Ask browser for camera access
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(function(stream) {
+        // Show the stream in the video element
+        document.getElementById('camera').srcObject = stream;
+      })
+      .catch(function(error) {
+        console.error("Camera access error:", error);
+      });
+  </script> -->
