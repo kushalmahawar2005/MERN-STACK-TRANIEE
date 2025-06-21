@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <h1 style = "font-size: 100px; text-align: center; font-family: verdana;"></h1> -->
+
+    <!-- used for set time our and intervel of time
+<button onclick = "test()">Try It</button> -->
+
+    <!-- ---- use of Date Method in Js ----
+    <h1 id = "res"> 
+
+    </h1>
+
+    <button onclick= "getDate()">Date</button>
+    <button onclick= "year()">Year</button>
+    <button onclick= "day()">day</button>
+    <button onclick= "time()">Time</button>
+    <button onclick= "hour()">hour</button>
+    
+     -- Use of prompt Function --------------- -->
+  <!--   Name: <i id = "result"></i><br> 
+     <button onclick = "call()">Call</button> --> 
+
+
+
+<!-- -----------------For getElementsByName() and getElementsByTagName()----------------
+     <input type = " " name = "u_name" >
+     <button onclick= "getName()">Submit</button>
+     <br>
+     <h1></h1> -->
+
+
+     <!-- --------For Modify Css Using Js---------------- -->
+
+     <!-- <div id = "main" onmouseup="modify()" onmouseleave="unmodify()">
+         
+       <h1>Netfilx</h1>
+     </div>
+     <h1></h1>
+ </body>
+<style>
+    *{
+        margin : 0;
+        padding : 0;
+        background-color : rgb(3, 7, 1)
+    }
+    #main {
+        
+        color: red;
+        font-size : 50px;
+        text-align: center;
+        transition : 3s;
+        font-family: 'Bebas Neue', cursive;
+        }
+</style> -->
+
+<!-- --------Use of prompt Function---------------
+
+<script type = "text/javascript">
+    function call() {
+        var name = prompt("Enter your name here" , " ");
+        //document.write(result);
+        document.getElementById('result').innerHTML = name;
+    } 
+</script>-->
+
+
+<!-- Arry in Javascript  --->
+<!-- <script>
+    var age = 2;
+    if(age > 18) {
+        document.write("You are an adult");
+    }
+    else if (age > 12) {
+        document.write("You are a teenager");
+    }
+    else if (age > 5){
+        document.write("You are a child");
+    }
+    else {
+        document.write("You are a baby");
+    }
+    
+</script> -->
+<!-- ------Arrays in js--------- -->
+
+ <script>
+     
+//  var car = []; //Declaration of an array
+// car = ["BMW", "Mercedes", "Audi", "Toyota"];
+// document.write(car[3]); // Accessing the 4th element of the array
+// car[4] = "Mercedes Benz"; // Adding a new element to the array
+// document.write("<br>" + car[4]); // Accessing the newly added element -->
+
+// ----------------For Loop in Javascript----------------
+//var car = ["BMW", "Mercedes", "Audi", "Toyota"];
+// for (var i = 0; i < car.length; i++) {
+//     document.write(car[i] + "<br>");
+// }
+// car.push("Mercedes Benz");
+// document.write("<br>" + car[4]);
+// document.write(car.shift()); // Removes the first element of the array
+
+// document.write("<br>" + car[0]);
+
+// -----------------While Loop in Javascript----------------
+// var i = 0;
+// while (i < car.length) {
+//     document.write(car[i] + "<br>");
+//     i++;
+// }
+
+//---- For Each Loop in Javascript ----------------
+//----------syntax-----------
+
+// var cars = ["cars1", "cars2", "cars3", "cars4"];
+// cars.forEach(myfunction);
+// function myfunction(item , index , array){
+//     //Body of the function
+// }
+
+// Here item - (car1,etc)
+// Here index - (0,1,2,3,etc)
+// Here array - (cars)
+
+    // var cars = ["car1" , "car2", "car3" , "car4" , "car5"];
+
+    // cars.forEach(car);
+
+    // function car(item , index , array) {
+    //    // document.write(index + "=> "+ item + "<br>");
+    //    array[index] = item + " 0 ";
+    // }
+
+    // cars.forEach(after);
+    // function after(item , index ){
+    //     document.write(index + " => " + item + "<br>");
+    // }
+
+//    ------------------Cotinue statement in Javascript-------------
+// it used used in loop for skipping the current iteration and moving to the next iteration
+// for (var i = 0; i < 10; i++) {
+//     if (i == 5) {
+//         continue; // Skips the current iteration when i is 5
+//     }
+//     document.write(i + "<br>");
+
+
+//-----------Break statement in Js--------------
+// It is used in loop for breaking the loop when a certain condition is met
+// for (var i = 0; i < 10; i++) {
+//     if (i == 5) {
+//         break; // Breaks the loop when i is 5
+//     }
+//     document.write(i + "<br>");
+
+
+//------------Switch statement in Js----------------
+//---Used for multiple conditions
+// let i = 9;
+// switch (i) {
+//     case 1:
+//         document.write("i is one :");
+//         break;
+
+//         case 2:
+//             document.write("i is teo :");
+//             break;
+//             case 3:
+//                 document.write("i is three:");
+//                 break;
+
+//                 default:
+//                     document.write("i is more than 3");
+//                     break;
+// }
+//----------Important Method of Array in Js----------------
+    //  1. valueOf() - To print the value of the array
+    //  2. isArray() - To check whether the variable is an array or not
+    //  3, concat() - To concatenate two arrays in one array
+    //  4. indexOf() - To find the index of an element in the array(For specified Obejct)
+    // 5. join() - To join the elements of an array into a string
+    //  6. pop() - To remove the last element of the array
+    //  7. push() - To add an element to the end of the array
+    //  8. shift() - To remove the first element of the array
+    //  9. slice() - To slice the array from a specified index to another index
+    // 10. reverse() - To reverse the order of the elements in the array
+    
+    // -- Example of Array Methods in Js-----
+    // var fruits = ["Apple", "Banana", "Cherry", "Date"];
+    // var vegetables = ["Carrot", "Potato", "Tomato", "Onion"];
+    // var shop = fruits.concat(vegetables); // Concatenating two arrays
+    // document.write(shop + "<br>"); // Printing the concatenated array
+    // document.write(Array.isArray(shop) + "<br>"); // Checking whether the variable is an array or not
+    // document.write(shop.valueOf() + "<br>"); // Printing the value of the array
+    // document.write(shop.indexOf("Banana") + "<br>"); // Finding the index of an element in the array
+    // document.write(shop.join(" - ") + "<br>"); // Joining the elements of an array into a string
+    // document.write(shop.pop() + "<br>"); // Removing the last element of the array
+    // document.write(shop.push("Mango") + "<br>"); // Adding an element to the end of the array
+    // document.write(shop.shift() + "<br>"); // Removing the first element of the array
+    // document.write(shop.slice(1, 3) + "<br>"); // Slicing the array from index 1 to index 3
+    // document.write(shop + "<br>"); // Printing the final array
+
+  //  ----TO UNDERSTAND THE CONCEPT WATCH FROM 11:48:00 - 11:52:00 ON YOUTUBE (WsCube Tech 28 Hour Video)
+
+//   // -------------Date Method in js --------------
+//   1. Date() - To create the current date and time
+//   2. getFullYear() - To get the current year(yyyy)
+//   3. getMonth() - To get the current month(0-11)
+//   4. getDate() - To get the current date(1-31)
+//   5. getHours() - To get the current hour(0-23)
+//     6. getMinutes() - To get the current minutes(0-59)
+//     7. getSeconds() - To get the current seconds(0-59)
+//     8. getMilliseconds() - To get the current milliseconds(0-999)
+//     9. getDay() - To get the current day(0-6)
+//     10. getTime() - To get the current time in milliseconds since January 1, 1970
+//     11. toDateString() - To convert the date to a string
+
+//Implementation of Date Method in Js
+//  var Date = new Date();
+ 
+
+//  function getDate() {
+//     document.getElementById('res').innerHTML = Date;
+
+//  }
+//  function year() {
+//     document.getElementById('res').innerHTML = Date.getFullYear();
+//  }
+//  function day() {
+//     document.getElementById('res').innerHTML = Date.getDay();
+//  }
+
+//  function time() {
+//    document.getElementById('res').innerHTML = Date.getTime();
+
+//  }
+//     function hour() {
+//         document.getElementById('res').innerHTML = Date.getHours();
+//     }
+        
+//  ----------Events in Js----------------
+
+//it is used to perform an action when a user interacts with the web page.
+
+
+
+
+
+// --FOR MOUSE--
+// 1. onclick - To perform an action when the user clicks on an element
+// 2. oncontextmenu - To perform an action when the user right clicks on an element
+// 3. onmousedown - To perform an action when the user presses the mouse button down on an element
+// 4. onmouseseentar - To perform an action when the user moves the mouse over an element (onto)
+// 5. onmouseleave - To perform an action when the user moves the mouse out of an element
+// 6. onmousemove - To perform an action when the user moves the mouse over an element (over)
+// 7. onmouseover - To perform an action when the user moves the mouse over an element
+// 8. onmouseout - To perform an action when the user moves the mouse out of an element
+// 9. onmouseup - To perform an action when the user releases the mouse button over an element
+// 10. onwheel - To perform an action when the user scrolls the mouse wheel over an element
+
+
+// -----------FOR KEYBOARD--------------
+// 1. onkeydown - To perform an action when the user presses a key down
+// 2. onkeypress - To perform an action when the user presses a key down and releases it
+// 3. onkeyup - To perform an action when the user releases a key
+
+// -----------FOR FORM----------------
+// 1. onsubmit - To perform an action when the user submits a form
+// 2. onreset - To perform an action when the user resets a form
+// 3. oninput - To perform an action when the user inputs data in a form
+// 4. onchange - To perform an action when the user changes the value of a form element
+// 5. onfocus - To perform an action when the user focuses on a form element
+// 6. onblur - To perform an action when the user blurs a form element
+// 7. onselect - To perform an action when the user selects text in a form element
+// 8. oninvalid - To perform an action when the user inputs invalid data in a form element
+// 9. onvalid - To perform an action when the user inputs valid data in a form element
+// 10. onsearch - To perform an action when the user searches for something in a form element
+// 11. onsubmit - To perform an action when the user submits a form
+// 12. onreset - To perform an action when the user resets a form
+// 13. onload - To perform an action when the page loads
+
+
+
+
+
+//-----------------------------DOM OTHERS METHODS--------------
+//-------------getElementsByName()----------------
+// It is used to get the element by its name attribute
+
+// -------------getElementsByTagName()----------------
+// It is used to get the elements by their tag name
+
+// 
+
+
+// -------------Set Intervet Method in js- -----------
+// ---It is used for repeation of a specific function after a specific intervel of time 
+// function test() {
+//     setInterval(
+//         function() {
+//             alert("Hello!");
+//         }, 1000
+//     )
+// }
+
+//----------setTimeout()--------------
+//  - It is used to execute a function after a specific time interval
+// function test() {
+//     setInterval(
+//         function() {
+//             alert("Hello!");
+//         }, 3000
+//     )
+// }
+
+
+// -------------------Digital Clock in Js----------------
+// function showTime(){
+//     var d = new Date();
+//     var h = d.getHours();
+//     var m = d.getMinutes();
+//     var s = d.getSeconds();
+//     var session = "AM";
+
+//     if (h > 12) {
+ //         h = h - 12; // Converting to 12-hour format}
+
+ //    if (h >= 12) {
+ // session = "PM"; // Setting session to PM if hour is greater than or equal to 12
+ //}
+//     h = h < 10 ? "0" + h : h; // Adding leading zero if hour is less than 10
+//     m = m < 10 ? "0" + m : m; // Adding leading zero if minute is less than 10
+//     s = s < 10 ? "0" + s : s; // Adding leading zero if second is less than 10
+
+//     var time = h + ":" + m + ":" + s + " " + session;
+//     setTimeout(showTime, 1000);
+//     document.getElementsByTagName('h1')[0].innerHTML = time;
+//   -------NOTE: nload = "showTime() used it with body tag to call the function when the page loads}
+
+
+// ---------   css Modification in Js----------------
+
+// function modify(){
+//    document.getElementById('main').style.fontSize = "200px";
+//    document.getElementById('main').style.color = "blue";
+// }
+
+// function unmodify(){
+//    document.getElementById('main').style.fontSize = "50px";
+//    document.getElementById('main').style.color = "Green";
+// }
+
+
+
+// --------- setIntervel is used to set an interval of interval in milliseconds to execute a function repeatedly
+// ----------- To use to stop the setIntervel Process We use clearInterval() method -------------------- 
+
+</script>
+
+</html>

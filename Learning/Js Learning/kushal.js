@@ -7,7 +7,7 @@
 // name = "Akshat";
 // alert(name);
 
-const { default: OperatorNode } = require("three/src/nodes/math/OperatorNode.js")
+// const { default: OperatorNode } = require("three/src/nodes/math/OperatorNode.js")
 
 
 // // -------This is used to get the text of id --------
@@ -60,3 +60,29 @@ const { default: OperatorNode } = require("three/src/nodes/math/OperatorNode.js"
 // }
 
 //------ Simple Calculator using js ------
+// function cal(){
+// var opr1 = document.getElementById('first').value;
+// var opr2 = document.getElementById('second').value;
+// var ope = document.getElementById('ope').value;
+// if (ope == "+" ){
+//     result = parseInt(opr1) + parseInt(opr2);
+// }
+// if (ope == "-" ){
+//     result = parseInt(opr1) - parseInt(opr2);
+// }
+// if (opr == "*"){
+//     result = parseInt(opr1) * parseInt(opr2);
+// }
+// if (ope == "/"){
+//     result = parseInt(opr1) / parseInt(opr2);
+// }
+
+
+// document.getElementById('res').innerHTML = "Result is: " + result;
+
+// }
+
+// function call() {
+// var result = prompt("Enter your name", " ");
+// document.write(result);
+// }
