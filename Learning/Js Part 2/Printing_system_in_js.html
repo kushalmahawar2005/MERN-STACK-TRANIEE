@@ -1,0 +1,33 @@
+
+<!-- ---------------Printing a page or epecific element------------------>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Printer</title>
+</head>
+<body id = "body">
+    <h1>Hey Everyone, This is Kushal From Arya College Of Engineering</h1>
+    <p id = "data">
+        <h1>Print Table Data</h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatem ipsum minima recusandae numquam nesciunt earum qui natus magnam in eaque, sapiente deleniti culpa beatae similique, ipsa rerum amet! Eos!
+    Nobis dolorem nisi doloribus eius. Debitis tenetur possimus repellendus incidunt, iure alias ullam voluptates exercitationem molestias similique sed qui quos maiores illum molestiae temporibus obcaecati consectetur, quo dolorum nam nobis!
+    Ratione non tempore a odit. Ullam, id autem ipsam molestiae est alias mollitia, ut itaque optio, magni dignissimos culpa quaerat. Eaque ipsam ab unde tempora ex earum amet inventore quas.
+    Voluptate nesciunt excepturi incidunt mollitia, aperiam doloribus asperiores labore fugiat adipisci ab maxime eligendi reprehenderit provident repudiandae dolorem assumenda possimus quos, quo consectetur vero libero sed beatae! Voluptates, aliquid minima.
+    Earum quasi sed reiciendis eos, eaque impedit, vel eum possimus numquam voluptas nihil. Maxime eum iusto eveniet enim. Officiis sapiente repellendus dolorem sequi consequuntur? Adipisci, qui nemo. Aperiam, beatae pariatur!</p>
+
+    <button onclick = "Print()">Print</button>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero tempore tempora, consequatur repellendus quas itaque a deserunt facere dicta ipsum magnam pariatur obcaecati officiis neque! Eum assumenda distinctio placeat molestias.</p>
+
+</body>
+<script type = "text/javascript">
+    function Print(){
+       var body = document.getElementById('body').innerHTML;
+      var data = document.getElementById('data').innerHTML;
+      document.getElementById('body').innerHTML = data;
+      window.print();
+      document.getElementById('body').innerHTML = body;
+    
+    }
+    </script>
+</html> 

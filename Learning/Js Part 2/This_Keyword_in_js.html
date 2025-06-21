@@ -1,0 +1,25 @@
+<!-- --------------This Keyword In JavaScript---------------- -->
+<!-- The `this` keyword in JavaScript refers to the context in which a function is executed. It can have different values depending on how a function is called. Here are some common scenarios: -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This </title>
+</head>
+<script type="text/javascript">
+    var person = {
+        firstName : "Kushal",
+        secondName : "Mahawar",
+        fullName : function() {
+            return this.firstName + " " + this.secondName;
+        }
+    
+    };
+        document.write("<h1>"+ person.fullName());
+    
+    </script>
+<body>
+    <button onclick = "this.style.display = 'none'">Click TO Hide Me</button>
+</body>
+</html> 

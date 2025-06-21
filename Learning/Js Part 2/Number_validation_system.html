@@ -1,0 +1,40 @@
+
+<!------------------  No Validation in JS ------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check No Validation</title>
+</head>
+<body>
+    <form>
+        <label for = "Number">Please enter your number:</label>
+      <br>
+        <input type = "text" onkeyup="val(this)">
+        <div id="res"></div>
+    </form>
+</body>
+<script type = "text/javascript">
+    document.getElementById('res').style.color = "red";
+    function val(elem){
+       //elem.value;
+       if (isNaN(elem.value) ) {
+        document.getElementById('res').innerHTML = "Please enter a valid number";
+       }
+       else {
+         document.getElementById('res').innerHTML = " ";
+
+         if(elem.value.length > 10) {
+            document.getElementById('res').innerHTML = "Please enter a number less than 10 digits";
+         }
+         else if(elem.value.length < 10) {
+            document.getElementById('res').innerHTML = "Please enter a number with 10 digits";
+         }
+         else {
+            document.getElementById('res').innerHTML = " ";
+         }
+       }
+    }
+</script>
+</html>
