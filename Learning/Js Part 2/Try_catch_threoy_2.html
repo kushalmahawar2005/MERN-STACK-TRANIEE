@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+Please Enter No Between 5 to 10 
+<br>
+<br>
+<input type=" " name = " " id="num">
+<button onclick="test()">Click ME</button>
+<h1 id = "result">
+
+</h1>
+    
+</body>
+<script>
+    var num = document.getElementById('num');
+    function test() {
+   var data = num.value;
+   try{
+    if(isNaN(data)){
+        throw "Not a Number";
+    }
+    else if(data < 5 || data > 10){
+        throw "Number is not between 5 to 10";
+    }
+    
+
+   }catch(errMessage){
+    document.getElementById('result').innerText = errMessage;
+
+   }
+    }
+</script>
+</html>

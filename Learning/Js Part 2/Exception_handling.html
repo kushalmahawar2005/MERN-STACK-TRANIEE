@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exception_handling</title>
+</head>
+<body>
+    <button onclick = "test()">Click ME</button>
+    <h1 id ='res'> 
+    </h1>
+</body>
+<script>
+    function test() {
+        try {
+            var no = "Hello World";
+            var x = no.toUpperCase();
+              document.getElementById('res').innerHTML = x;
+    }
+    catch (err) {
+        document.getElementById('res').innerHTML = err;
+    }
+}
+</script>
+</html> 
+
