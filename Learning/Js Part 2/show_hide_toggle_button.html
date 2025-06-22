@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset style = "width:300px; height:150px; border:1px solid black;">
+            <legend>Login Form</legend>
+            <div>
+            <legend>User Name</legend>
+            <input type ="text" name =" ">
+            <div class = "clear"></div>
+            </div>
+            <div>
+            <legend>Password</legend>
+            <input type = "password" name = " " id = "password">
+            <div class = "clear"></div>
+            </div>
+<div>
+            <button type = "button">Login</button>
+            <button style = "width: 200px;" type = "button" onclick = "toggle(this)">Show Password</button>
+</div>
+        </fieldset>
+    </form>
+</body>
+<script>
+    var password = document.getElementById('password');
+    function toggle(elem) {
+    var type = password.getAttribute('type');
+    if (type === 'password'){
+        password.setAttribute('type', 'text');
+        elem.innerText = "Hide Password";
+    }else{
+    password.setAttribute('type' , 'password'); 
+    elem.innerText = "Show Password";
+}
+    }
+</script>
+</html>
