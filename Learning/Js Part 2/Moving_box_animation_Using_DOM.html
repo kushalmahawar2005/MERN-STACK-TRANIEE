@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Box Animation</title>
+</head>
+<style>
+    .yellow{
+        width: 400px;
+        height: 400px;
+        background-color: yellow;
+        position: relative;
+        margin-top: 50px;;
+    }
+    #red{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+        top : 0px;
+        left : 0px;
+    
+    }
+
+   
+</style>
+<body>
+    <button onclick = "move()">Click me</button>
+    <div class = "yellow">
+        <div id = "red"></div>
+    </div>
+
+    
+    
+</body>
+<script type ="text/javascript">
+     function move(){
+       
+        var red = document.getElementById('red');
+        var poe = 0;
+        var anim = setInterval(animate, 5);
+
+        
+        function animate(){
+             if(poe == 300){
+            clearInterval(anim);
+        }else {
+                    poe++;
+            red.style.top = poe + 'px';
+             red.style.left = poe + 'px';
+        }
+             
+    }
+}
+</script>
+</html>
