@@ -5,6 +5,7 @@
 #css{
     text-align: center;
     display: flex;
+    flex-direction: column;
 }
 
 h1{
