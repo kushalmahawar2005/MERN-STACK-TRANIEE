@@ -1,0 +1,100 @@
+*{
+    background-color:#7174DB;
+
+}
+
+.a{
+    Width : 330px;
+    height : 450px;
+    border : 2px solid black;
+    border-radius: 15px;
+    background-color: #2A2461;
+   align-items: center;
+    margin-left: 35%;
+    margin-top: 5%;
+    box-shadow: 0px 0px 10px #e0d5d5;
+    
+
+}
+section{
+    border: 2px solid black;
+    height: 140px;
+    position : absolute;
+    width: 140px;
+    background-color: transparent;
+    border-radius: 50%;
+    margin-left: 83px;
+    margin-top: 5px;
+
+}
+#card{
+    background-color: #EDEDFD;
+    height: 150px;
+    border-radius: 12px 12px 0px 0px;
+    padding: 10px;
+}
+
+.card{
+    font-family: 'funnel display';
+    color: #ffffff;
+    font-size: 12x;
+    font-weight: 100;
+    margin-top: 10px;
+    background-color: transparent;
+
+}
+h1{
+   text-align: center;
+   font-size: 20px;
+   background-color: transparent;
+   font-weight: 600;
+   margin-bottom: 9px;
+    
+}
+
+h2{
+    text-align: center;
+    font-size: 21px;
+    background-color: transparent;
+    font-weight: 100;
+    padding-top : 0px;
+    margin: 0px;
+}
+.material-symbols-outlined{
+    background-color: transparent;
+    position:  absolute;
+    margin-left: 10px;
+   
+}
+#training{
+    background-color: transparent;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 8px;
+}
+p{
+    background-color: transparent;
+    font-size: 13px;
+    margin : 5px;
+    margin-left: 10px;
+    margin-top: 12px;
+    font-weight: 100;
+}
+.label {
+  display: inline-block;
+  width: 95px; 
+  font-weight: bold;
+  background-color: transparent;
+}
+
+
+#Image{
+    width: 130px;  
+    height: 130px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    margin-left: 90px;
+    margin-top: 12px;
+    box-sizing: content-box;
+    box-shadow: 2px 2px 2px #0f8488 , 2px -2px 2px #0f8488  ,-2px -2px 2px #0f8488  , -2px 2px 2px #0f8488 ;
+}
