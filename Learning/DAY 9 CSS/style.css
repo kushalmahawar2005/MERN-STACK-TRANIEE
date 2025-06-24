@@ -1,0 +1,75 @@
+*{
+    background-color: rgb(90, 36, 36);
+    
+}
+
+#container{
+width : 400px;
+height: 300px;
+border : 2px solid white;
+}
+div{
+    width: 100px;
+    height: 100px;
+    border : 2px solid white;
+    margin: 10px;
+    display: inline-block;
+}  
+
+.parent{
+    width : 100px;
+    height :100px;
+    border : 2px solid white;
+    color : wheat;
+    font-size: 0.9em;
+}
+
+.child{
+    width : 50%;
+    height : 50%;
+    border : 2px solid white;
+    font-size: 25px;
+    
+}
+
+.a{
+    height: 100px;
+    width : 100px;
+    border : 2px solid white;
+    display : inline-block;
+    position : relative;
+    background-color: red;
+    z-index: 6;
+}
+
+.b{
+     height: 100px;
+    width : 100px;
+    border : 2px solid white;
+    display: inline-block;
+    background-color: green;
+    position: relative;
+    z-index: 8;
+    margin-left: 120px;
+}
+
+.img{
+    width : 200px;
+    height : 200px;
+    background-image: url('https://imgs.search.brave.com/xZxWWXzkycampquOxqDzI7RZsqhDzBMfPO9HaaAs_zI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/aW1nYWNhZGVteS5j/b20vc2l0ZXMvZGVm/YXVsdC9maWxlcy9p/bWctYnMtbGFuZGlu/Zy1wYWdlcy1wZXJz/b25hbC5qcGc');
+    /* background-size :contain; */
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+h2{
+    background-color: red;
+    position : fixed;
+    top : 0px;
+}
+
+#back {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to right , red, yellow,black , orange , blue);
+}
