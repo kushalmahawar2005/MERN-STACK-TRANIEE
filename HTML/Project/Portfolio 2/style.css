@@ -48,3 +48,7 @@ nav a:hover {
     top : 370px;
     font-weight : 700;
 }
+
+section {
+  padding: 20px;
+}
