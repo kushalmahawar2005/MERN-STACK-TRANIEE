@@ -1,0 +1,455 @@
+*{
+
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+    
+}
+
+.header {
+    background-color: #000101;
+    height: 60px;
+    width : 100%;
+    margin : 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    position:fixed;
+}
+
+.header .img {
+    padding-top: 13px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.header .home-icon {
+    margin-left: 18px;
+    margin-top: 9px;
+    margin-bottom: 5px;
+    border: 2px solid #1F1F1F;
+    background-color: #1F1F1F;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    
+}
+.header .home-icon img {
+    width: 30px;
+    height: 30px;
+    margin-left: 6px;
+    margin-top: 5px;
+    
+}
+
+.header .home-icon:hover {
+    background-color: #313131;
+    width : 48px;
+    height: 50px;
+    transition: all 0.3s ease;
+}
+
+.header .search {
+  margin-left: 10px;
+  margin-top: 8px;
+  background-color: #1F1F1F;
+    width: 480px;
+    height: 45px;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.header .search img {
+    margin-top : 3px;
+    margin-left: 6px;
+    
+}
+
+.header .search input {
+    width: 300px;
+    height: 19px;
+    background-color: #1F1F1F;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding-left: 10px;
+    position: absolute;
+    top : 23px;
+    font-family :'Roboto';
+    font-size: 14px;
+    font-weight: 600;
+}
+.header .search input:focus {
+    outline: none;
+}
+
+.header .search input::placeholder {
+    color: #B3B3B3;
+}
+
+.header .search .folder-icon {
+    position: absolute;
+    top: 6px;
+    left : 550px;
+    width: 50px;
+    height: 40px;
+    border-radius : 50%;
+    cursor : pointer;
+}
+
+.right {
+  display: flex;
+  display : inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'roboto';
+  font-weight: 800;
+  margin-left: 160px;
+}
+
+.right .b {
+    font-size : 16px;
+  gap :2px;
+}
+.right a, .right span {
+  text-decoration: none;
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
+.header .right-links {
+    display: grid;
+    grid-template-columns: 100px 70px 50px;
+
+    align-items: center;
+    margin-left: 70px;
+    padding-right: 30px;
+    gap : 10px;
+    text-decoration: none;
+}
+
+#install img {
+    align-items: center;
+    height: 15px;
+    width: 15px;
+}
+
+#app {
+    padding : 5px;
+    height: 20px;
+    width: 20px;
+    font-family: 'roboto';
+    font-weight: 900;
+}
+
+#sign {
+    margin-left: 15px;
+    font-family: 'roboto';
+    font-weight: 900;
+}
+
+.header .right-links a {
+    color: #b3b3b3;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#log {
+    font-family : 'roboto';
+    font-weight: 800;
+    border : 2px solid white;
+    height: 46px;
+    width: 110px;
+    background-color: white;
+    color : black;
+    border-radius: 30px;
+    display: flex;
+    text-align: center;
+
+}
+
+#log span {
+    margin-top : 12px;
+    margin-left :27px;
+    font-size: 16px;
+}
+
+main {
+    background-color: #000000;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+#sidebar {
+    margin-left: 10px;
+    height : 520px;
+    width : 380px;
+    border : 2px solid #131312;
+    background-color: #131312;
+    border-radius : 10px;
+    position: fixed;
+    top : 60px;
+   
+}
+
+
+.sidebar h1{
+    height : 50px;
+    font-size: 16px;
+    color : white;
+    font-weight: 600;
+    margin-top: 18px;
+    margin-left: 15px;
+
+}
+
+#sidebar img {
+    width: 17px;
+    height: 17px;
+    margin-left: 350px;
+    position: absolute;
+    cursor: pointer;
+    top : 18px;
+  
+}
+
+.playlist {
+    display: flex;
+    height: 332px;
+    width:  380px;
+    padding : 0px 8px 8px;
+    color : white;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8;
+
+    
+
+   
+}
+
+.one{
+    width : 370px;
+    height : 132px;
+    background-color: #1F1E1E;
+    border : 1px solid #1F1E1E;
+    border-radius : 10px;
+    margin : 8px 0px;
+    padding : 16px 20px;
+    font-family: 'roboto';
+    font-weight: 600;
+    
+}
+
+.subtext {
+    font-size: 14px;
+    color: #B3B3B3;
+    margin-top: 10px;
+    
+}
+
+.create-playlist {
+    width: 130px;
+    height: 42px;
+    background-color: white;
+    border : 1px solid #1F1E1E;
+    border-radius : 30px;
+    margin : 8px 0px;
+    padding : 16px 20px;
+    font-family: 'roboto';
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+
+.term-condition {
+    width: 379px;
+    height: 220px;
+    background-color:#131312;
+    color: #B3B3B3;
+    font-size: 11px;
+    position: fixed;
+    bottom: 60px;
+    
+    
+
+}
+
+.term {
+    margin : 32px 0;
+    padding : 0px 24px;
+  height: 50px;
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* spacing between items */
+  padding: 8px 16px;
+}
+
+.term span{
+  color: #b3b3b3;
+  text-decoration: none;
+  font-size: 11px;
+  white-space: nowrap; 
+}
+
+
+.cookies{
+    font-size: 12px;
+    margin-left: 12px;
+}
+
+.language { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height : 40px;
+    width : 120px;
+    border : 1px solid #ffff;
+    color : #ffff;
+    border-radius: 30px;
+    font-family: 'roboto';
+    font-weight: 700;
+    font-size: 15px;
+    margin-top : 10px;
+}
+
+#english {
+    margin-left: 30px;
+    font-family: 'roboto';
+    
+}
+
+
+
+
+.footer{
+    background : linear-gradient(to right , #AE2996, rgb(161,56,164),#7E62C6, #6A7ADB , #5296F1);
+    color : #ffff;
+    height : 60px;
+    width : 100%;
+    font-family: 'roboto';
+    font-weight: 500;
+    font-size: 14px;
+    padding : 11px 24px 7px 35px;
+    position: fixed;
+    bottom: 0;
+    
+}
+
+.footer-content span { 
+    color: #ffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight : 400;
+    line-height: 1.5;
+}
+
+.sign-up {
+    width : 160px;
+    height : 50px;
+    position : absolute;
+    top : 5px;
+    right : 10px;
+    border : 2px solid white;
+    background-color: white;
+    border-radius : 30px;
+}
+
+.sign-up-button {
+    height : 30px;
+    width : 120px;
+    margin-top :6px;
+    margin-left : 20px;
+    font-family: 'roboto';
+    font-weight: 700;
+    font-size : 17px;
+    color : black;
+    background-color: #ffff;
+    border : none;
+    cursor : pointer;
+}
+
+
+#aside {
+    margin-left: 400px;
+    height : 520px;
+    width : 970px;
+    border : 2px solid #131312;
+    background-color: #131312;
+    border-radius : 5px;
+    position: fixed;
+    top : 60px;
+}
+
+.aside-header h1 {
+    
+    margin-top: 20px;
+    height : 50px;
+    color : white;
+    font-size : 24px;
+    font: 400;
+    font-family: 'roboto';
+}
+
+.aside-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 30px;
+    color : white;
+    font-weight: 500;
+    height : 80px;
+    width : 100%;
+    margin-bottom: 0px;
+}
+
+.list-1-song{
+    display: flex;
+    height : 250px;
+    flex-direction: row;
+    align-items: center;
+    padding-left : 20px;
+    border-bottom: 1px solid #1F1E1E;
+    color : white;
+    font-family: 'roboto';
+    line-height: 1.5;
+    justify-content: space-between;
+    gap : 0px;
+}
+
+.list-1-song img {
+    display: flax;
+    column-gap: 10px;
+    width: 160px;
+    height: 150px;
+    margin-top : 0px;
+    margin-bottom: 0px;
+    border-radius : 10px;
+    
+
+}
+
+.song p {
+    width : 120px;
+    font-size: 16px;
+    font-family: 'roboto';
+    font-weight: 400;
+    margin-top : 0px;
+}
+
+#singer {
+   width : 120px;
+   margin-top : 5x;
+  font-size : 13px;
+  font-family: 'roboto';
+    font-weight: 400;
+    color : #b3b3b3;
+}
+

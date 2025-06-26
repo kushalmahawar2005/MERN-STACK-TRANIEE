@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class = " header">
+           <div class="img">
+                <img src = "Logo.png" alt="Spotify Logo" width = "35px" height = "35px">
+           </div>
+           <div class="home-icon">
+            <img src="home.png" alt="Home Icon" width="20px" height="30px">
+           </div>
+           <div class="search">
+            <img src="search.png" alt="Search Icon" width="30px" height="30px">
+            <input type="text" placeholder="What do you want to play?" class="search-bar">
+            <img src = "folder.png" alt="Folder Icon" width="70px" height="60px" class="folder-icon">
+           </div>
+           <div class="right">
+            <a class ="b" href="#">Premium</a>
+            <a class ="b" href="#">Support</a>
+            <a class ="b" href="#">Download </a> 
+            </div>
+          
+            <span>|</span>
+            <div class="right-links">
+            <div id = "install">
+                <img src="install.png" alt="Install Icon" width="20px" height="20px">
+
+            <a href="#" id = "app">Install App</a>
+            </div>
+            <a href="#" id ="sign">Sign Up</a>
+            <a href="#" id = "log"><span>Log in</span></a>
+            </div>
+        </div>
+        </div>
+    </header>
+    <main>
+        <section id = sidebar>
+            <div class="sidebar">
+                <h1>Your Library</h1>
+                <span><img src ="add.png" alt = "add"> 
+                </span>
+            </div>
+        <div class="sidebar-content">
+
+            <div class = "playlist">
+                <section class = "one">
+                <span>Create your first playlist
+                    <br>
+                    <span class="subtext">it's easy, we'll help you</span>
+                </span>
+                <button class="create-playlist">Create Playlist</button>
+                </section>
+                <br>
+
+                <section class = "one">
+                <span>Let's find some prodcasts to follow
+                    <br>
+                    <span class="subtext">We'll keep you updated on new episodes</span>
+                </span>
+                <button class="create-playlist">Create Playlist</button>
+                </section>
+            </div>
+                <br>
+
+            <div class = "term-condition">
+                <div class = "term">
+                    <span>Legal</span>
+                    <span>Safety & PrivacyCenter</span>
+                    <span>Privacy Policy</span>
+                    <span>Cookies</span>
+                    <span>About Ads</span>
+                    <span>Accessibility</span>
+
+                </div>
+                <div class = "cookies">
+                    <span>Cookies</span>
+                </div>
+                <br>
+                <div class = "language">
+                   <img style = "position: absolute; margin-left: -70px; top : 163px;" src= "Language.png" alt="Language Icon">
+                    <span id = "english">English</span>
+                    
+                </div>
+            </div>
+         </div>
+        </section>
+
+     
+    </main>
+    <aside>
+        <section id = "aside">
+            <div class = "aside-header" style = "display: flex; justify-content: space-between; align-items: center;">
+                <h1>Trending songs</h1>
+                <span>show all</span>
+            </div>
+
+            <section class = "list-1-song">
+                <div class = "song">
+                    <img src= "logo-1.jpg" alt="Song 1" width="170px" height="180px">
+                    <p>Raat Ke Shikari</p>
+                    <p id = "singer">Massom Sharma</p>
+                </div>
+                <div class = "song">
+                    <img src= "https://a10.gaanacdn.com/gn_img/albums/4Z9bqZoKyQ/9bqgA4x13y/size_m.jpg" alt="Jugarfiya" width="170px" height="180px">
+                    <p>Jugarfiya-From "Super 30"</p>
+                    <p id = "singer">Udit Narayan,Shreya Ghoshal</p>
+                </div>
+                <div class = "song">
+                    <img src= "https://c.saavncdn.com/067/Finding-Her-Hindi-2025-20250104190643-500x500.jpg" alt="Finding-her" width="170px" height="180px">
+                    <p>Finding Her</p>
+                    <p id = "singer">Kushagra, Bharath , Saahel suman , Raja Rastogi</p>
+                </div>
+                <div class = "song"><img src= "https://c.saavncdn.com/915/Raanjhan-From-Do-Patti-Hindi-2024-20241004153945-500x500.jpg" alt="Ranjhan" width="170px" height="180px">
+                    <p>Raanjhan(From "Do Patti")</p>
+                    <p id = "singer">Sachet-Parampara, Parampara Tandon</p>
+                </div>
+                <div class = "song"><img src= "https://c.saavncdn.com/237/Young-G-O-A-T-Punjabi-2025-20250225150727-500x500.jpg" alt="Young GOAT" width="170px" height="180px">
+                    <p>Young G.O.A.T.</p>
+                    <p id = "singer">Cheema Y, Gur Sidhu</p></div>
+            </section>
+            <section class = "list-2-song">
+                 <div class = "aside-header" style = "display: flex; justify-content: space-between; align-items: center;">
+                <h1>Popular artists</h1>
+                <span>show all</span>
+            </div>
+                <div class = "Artist">
+                    <img src= "https://c.saavncdn.com/237/Young-G-O-A-T-Punjabi-2025-20250225150727-500x500.jpg" alt="Young GOAT" width="170px" height="180px">
+                    <p>Young G.O.A.T.</p>
+                    <p id = "singer">Cheema Y, Gur Sidhu</p>
+                </div>
+                <div class = "Artist">
+                    <img src= "https://c.saavncdn.com/915/Raanjhan-From-Do-Patti-Hindi-2024-20241004153945-500x500.jpg" alt="Ranjhan" width="170px" height="180px">
+                    <p>Raanjhan(From "Do Patti")</p>
+                    <p id = "singer">Sachet-Parampara, Parampara Tandon</p>
+                </div>
+                <div class = "Artist">
+                    <img src= "https://c.saavncdn.com/067/Finding-Her-Hindi-2025-20250104190643-500x500.jpg" alt="Finding-her" width="170px" height="180px">
+                    <p>Finding Her</p>
+                    <p id = "singer">Kushagra, Bharath , Saahel suman , Raja Rastogi</p>
+                </div>
+                <div class = "Artist"><img src= "https://a10.gaanacdn.com/gn_img/albums/4Z9bqZoKyQ/9bqgA4x13y/size_m.jpg" alt="Jugarfiya" width="170px" height="180px">
+                    <p>Jugarfiya-From "Super 30"</p>
+                    <p id = "singer">Udit Narayan,Shreya Ghoshal</p>
+                </div>
+                <div class = "Artist"><img src= "logo-1.jpg" alt="Song 1" width="170px" height="180px">
+                    <p>Raat Ke Shikari</p>
+                    <p id = "singer">Massom Sharma</p></div>
+            </section>
+            
+        </section>
+    </aside>
+
+    <footer>
+        <div class = "footer">
+            <div class="footer-content">
+                <p>Preview of Spotify</p>
+                <span>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</span>
+            </div>
+            <div class = "sign-up">
+                <button class="sign-up-button">Sign Up Free</button>
+
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
