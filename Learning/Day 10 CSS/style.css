@@ -10,7 +10,7 @@ div {
     animation-name: hello;
     animation-duration: 4s;
     animation-delay: 2s;
-    animation-timing-function : ease-in;
+    animation-timing-function : ease-in-out;
     animation-iteration-count: infinite;
     position : absolute;
 }
@@ -23,9 +23,13 @@ div:hover {
 } */
 
 @keyframes hello {
-    from{ left : 0px;
+    0%{ left : 0px;
         background-color : rgb(16, 139, 33);}
-    to {left : 400px;
-        background-color : red};
+    50% {
+        background-color : red;}
+
+    100% { left : 500px;
+        background-color : rgb(33, 22, 136);
+}
 }
 
