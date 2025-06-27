@@ -183,6 +183,7 @@ main {
     flex-direction: column;
 }
 
+
 #sidebar {
     margin-left: 10px;
     height : 520px;
@@ -195,6 +196,12 @@ main {
    
 }
 
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 85px;
+    
+}
 
 .sidebar h1{
     height : 50px;
@@ -225,10 +232,7 @@ main {
     display: flex;
     flex-direction: column;
     line-height: 1.8;
-
-    
-
-   
+  
 }
 
 .one{
@@ -386,6 +390,7 @@ main {
     border-radius : 5px;
     position: fixed;
     top : 60px;
+    overflow-y :scroll;
 }
 
 .aside-header h1 {
@@ -408,6 +413,8 @@ main {
     height : 80px;
     width : 100%;
     margin-bottom: 0px;
+    
+    
 }
 
 .list-1-song{
@@ -424,16 +431,16 @@ main {
     gap : 0px;
 }
 
+
 .list-1-song img {
-    display: flax;
+    display: flex;
     column-gap: 10px;
+    align-items: baseline;
     width: 160px;
     height: 150px;
     margin-top : 0px;
     margin-bottom: 0px;
     border-radius : 10px;
-    
-
 }
 
 .song p {
@@ -455,9 +462,88 @@ main {
 
 .list-2-song {
     display : flex;
-    height : 250px;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-around;
+    overflow-x: auto;
+    align-items: baseline;
+    color : White;
+    font-family: 'roboto';
+    font-weight: 400;
+
+}
+
+.list-2-song img {
+    width: 150px;
+    height: 150px;
+    border-radius : 50%;
+    margin : 10px;
+}
+
+.list-2-song p {
+    width : 150px;
+    font-size: 14px;
+    font-family: 'roboto';
+    font-weight: 600;
+    margin-top : 0px;
+    margin-left: 15px;
+    line-height : 1.5;
+}
+
+.list-3-song {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    padding-left: 20px;
-    ;
+    column-gap: 10px;
+    row-gap: 10px;
+    color : white;
+    font-family: 'roboto';
+    font-weight: 400;
+    margin-left: 10px;
+}
+.list-3-song img {
+    width: 150px;
+    height: 150px;
+    border-radius : 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.album p{
+    width : 150px;
+    font-size: 14px;
+    font-family: 'roboto';
+    font-weight: 600;
+    margin-top : 10px;
+    margin-left: 15px;
+    line-height : 1.5;
+    display: flex;
+    justify-self: start;
+}
+
+
+.song:hover {
+    border-radius: 10px;
+    border: 15px solid #1F1E1E;
+    background-color: #1F1E1E;
+    cursor: pointer;
+   
+}
+
+.album:hover {
+    border-radius: 10px;
+    border: 5px solid #1F1E1E;
+    background-color: #1F1E1E;
+    cursor: pointer;
+   
+}
+
+.Artist:hover {
+    border-radius: 10px;
+    border: 5px solid #1F1E1E;
+    background-color: #1F1E1E;
+    cursor: pointer;
+ 
 }
