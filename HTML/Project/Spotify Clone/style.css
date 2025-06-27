@@ -453,3 +453,11 @@ main {
     color : #b3b3b3;
 }
 
+.list-2-song {
+    display : flex;
+    height : 250px;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    ;
+}
