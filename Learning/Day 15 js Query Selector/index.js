@@ -59,3 +59,4 @@ function pallindrom(str) {
 }
 
 pallindrom("kushal");
+// Hello Every one 
