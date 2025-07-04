@@ -62,3 +62,20 @@
 // // Hello Every one 
 
 
+let content = document.getElementById('content');
+let add = document.getElementById('add');
+let remove = document.getElementById('remove');
+let toggle = document.getElementById('toggle');
+
+add.onclick = function() {
+    content.classList.add("Highlight");
+};   
+
+remove.onclick = function() {
+    content.classList.remove("Highlight");
+
+};
+
+toggle.onclick = function() {
+    content.classList.toggle("Highlight");
+};
