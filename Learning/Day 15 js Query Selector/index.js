@@ -49,14 +49,16 @@
 // printFibbonaci(5);
 
 
-function pallindrom(str) {
+// function pallindrom(str) {
    
-    let b = " ";
-    for (let i = str.length - 1; i>= 0 ; i--){
-        b += str[i];
-    }
-    console.log(b);
-}
+//     let b = " ";
+//     for (let i = str.length - 1; i>= 0 ; i--){
+//         b += str[i];
+//     }
+//     console.log(b);
+// }
 
-pallindrom("kushal");
-// Hello Every one 
+// pallindrom("kushal");
+// // Hello Every one 
+
+
