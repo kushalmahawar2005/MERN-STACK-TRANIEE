@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #343A40;
+    text-align: center;
+    color : white;
+    padding: 13px;
+    height : 90px;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+.subtitle{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.education ,.experience, .skills {
+    margin: 20px;
+    list-style: none;
+}
+.education ul {
+    padding : 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.summery h1 {
+    
+    font-size: 20px;
+    margin : 10px 10px 0px 10px;
+}
+
+.summery p{
+    font-size: 14px;
+    margin : 5px 20px 20px 10px;
+    padding : 5px 150px 0px 0px;
+}
+
+.summery ul {
+    margin-top: 0px;
+    padding: 0px 20px;
+    list-style: none;
+}
+
+.projects h1 {
+    margin: 10px;
+}
+
+.project-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top : 20px;
+}
+
+#magic{ 
+    margin-left: 10px;
+    width : 30px;
+    height : 40px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#magic a {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border : 2px solid #343A40;
+    border-radius: 10px;
+    
+}
+#magic:hover {
+    width: 150px;
+    height: 40px;
+    transition: 0.3s;
+    background: linear-gradient(45deg, #af4261, #f3ec78);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight : 500;
+}
+
+
+
+
+
+.item {
+    width : 500px;
+    padding-top: 10px 10px 0px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0px 10px 10px 10px;
+    box-shadow: 0 5px 14px rgba(0, 2, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    
+    
+}
+
+.item:hover {
+    box-shadow: 0 15px 20px rgba(0, 2, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.item p {
+    margin: 10px 10px 0px 10px;
+}
+
+.btn-1{
+    width : 100px;
+    border : 2px solid #343A40;
+    padding : 10px;
+    background-color : white;
+    border-radius : 10px;
+     margin: 10px 10px 10px 10px;
+    
+}
+.btn-1 a{
+    text-decoration: none;
+    color : black;
+    font-weight: 500;
+}
+
+.btn-1:hover {
+    background-color: #506fc2;
+    color: white;
+    cursor: pointer;
+}
+.btn-2 {
+    width : 100px;
+    border : 2px solid #343A40;
+    padding : 10px;
+     background-color : white;
+    border-radius : 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+.btn-2 a{
+    text-decoration: none;
+    color : black;
+    font-weight: 500;
+}
+
+.btn-2:hover {
+    background-color: #31c063;
+    color: white;
+    cursor: pointer;
+}
+
+.minor-projects ul{
+    margin: 20px;
+    list-style: none;
+}
+
+.experience ul {
+    list-style-type: none;
+    font-weight: 400;
+}
+
+.certificates ul {
+    margin: 20px;
+    list-style: none;
+    font-weight: 400;
+}
+
+.achievements ul {
+    margin: 20px;
+    list-style: none;
+    font-weight: 400;
+}
+
+.contact ul {
+    margin : 20px;
+    list-style: none;
+
+}
+
+footer {
+    text-align: center;
+    height : 60px;
+    margin-bottom: 0px;
+    width : 100%;
+    background-color: black;
+    color : white;
+    padding-top : 20px;
+}
+
+
+.contact li {
+    margin: 10px 0;
+    margin-left: 20px;
+}
+
+.contact a {
+    
+    color: black;
+    font-weight: 500;
+}
+
+#java {
+    position :absolute;
+    margin-left : 1200px;
+}
+
+#js {
+    position : absolute;
+    margin-left : 1140px;
+    margin-top: 40px;
+}
+
+#react {
+    position : absolute;
+    margin-left : 1080px;
+    margin-top: 80px;
+}
+
+#nodejs {
+    position : absolute;
+    margin-left : 1140px;
+    margin-top: 120px;
+}
+
+#md {
+    position : absolute;
+    margin-left : 1200px;
+    margin-top: 150px;
+}
+
+#mail {
+    position : absolute;
+    margin-left : 15px;
+    margin-top: 62px;
+}
+#call {
+    position : absolute;
+    margin-left : 15px;
+    margin-top: 110px;
+}
+#linkedin {
+    position : absolute;
+    margin-left : 15px;
+    margin-top: 155px;
+}
+
+#github {
+    position : absolute;
+    margin-left : 15px;
+    margin-top: 200px;
+}
+
+#portfolio {
+    position : absolute;
+    margin-left : 15px;
+    margin-top: 245px;
+}
