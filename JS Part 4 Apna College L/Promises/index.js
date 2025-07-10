@@ -11,10 +11,27 @@ function savetoDB(data){
             reject("failure : Data was not saved");
         }
     });
-
 }
+
+ 
+
+let request = savetoDb("apna college");
+request.then(() => {
+   console.log("promise was resolved"); 
+   console.log(request);
+})
+.catch(() => {
+    console.log("Promise was rejected");
+});
 
 
 
 
 // There Are two methods in Promises:-  then() and catch()
+
+
+
+
+//Priomises changesssssss
+
+

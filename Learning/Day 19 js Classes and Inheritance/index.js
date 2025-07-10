@@ -162,3 +162,20 @@
 // s.name = "Kushal";
 // console.log(s.name);
 // s.name = "";
+
+
+
+class Rectangle{
+    constructor(length,bredth) {
+        this.length = length;
+        this.bredth = bredth;
+    }
+
+
+    area() {
+        return `${this.length} ${this.bredth}`
+    }
+}
+
+const rec = new Rectangle(2 , 3);
+console.log(rec.area);
