@@ -37,32 +37,85 @@
 
 
 
-function savetoDB(data){
-    return new Promise ((resolve, reject) => {         
-        let internetSpeed = Math.floor(Math.random() * 10) + 1;
-        if (internetSpeed > 4) {
-            resolve("success : Data was saved");
-        } else {
-            reject("failure : Data was not saved");
-        }
+// function savetoDB(data){
+//     return new Promise ((resolve, reject) => {         
+//         let internetSpeed = Math.floor(Math.random() * 10) + 1;
+//         if (internetSpeed > 4) {
+//             resolve("success : Data was saved");
+//         } else {
+//             reject("failure : Data was not saved");
+//         }
+//     });
+// }
+
+//  savetoDB("Kushal Mahawar")
+//  .then((result) => {
+//     console.log("Data 1 Saved: Promise was resolved");
+//     return savetoDB("helloworld")
+//     console.log(result);
+//  })
+
+//  .then((result) => {
+//     console.log("Data 2 : Saved")
+//     return savetoDB("Hey Guys")
+//     console.log(result);
+//  })
+
+//  .then((result) => {
+//     console.log("This Whole world is mine")
+//     console.log(result);
+//  })
+
+// .catch((error) => {
+//     console.log("Promise was rejected");
+//     console.log(error)
+// });
+// h1 = document.querySelector(".h1");
+// function changeColor(color, delay, nextColorChange) {
+//     setTimeout(() => {
+//         h1.style.color = color;
+//         if(nextColorChange) nextColorChange();
+//     }, delay);
+// }
+
+// changeColor("red", 1000, () => {
+//     changeColor("green", 1000, () => {
+//         changeColor("orange", 1000);
+//     });
+// });
+
+
+//Doing Same with the use of promises
+
+
+h1 = document.querySelector(".h1");
+function changeColor(color, delay) {
+    return new Promise((resolve , reject) => {
+         setTimeout(() => {
+        h1.style.color = color;
+       resolve("color changeed !")
+    }, delay);
     });
 }
 
- savetoDB("Kushal Mahawar")
- .then(() => {
-    console.log("Data 1 Saved: Promise was resolved");
-    return savetoDB("helloworld")
+changeColor("red", 1000) 
+.then(() => {
+    console.log("red color was completed");
+    return changeColor("orange", 1000);
     
- })
+})
 
- .then(() => {
-    console.log("Data 2 : Saved")
-    return savetoDB("Hey Guys")
- })
+.then(() => {
+    console.log("orange color was completed");
+       return changeColor("blue" , 1000);
+    })
 
- .then(() => {
-    console.log("This Whole world is mine")
- })
-.catch(() => {
-    console.log("Promise was rejected");
-});
+    .then(() => {
+        console.log("Blue color was changed")
+        return changeColor("Green" , 1000);
+
+    })
+
+    .then(() => {
+        console.log("Green Color was chnages");
+    })
