@@ -39,3 +39,69 @@ We can use it Asynchronous type
 
 
 we can add search?q= ...  Jo bhi search karena hai likh do 
+
+
+
+
+
+// NODE JS 
+It create javascript read enviournment
+
+Let understand Node REPL = Read, Evaluate, print, Loop
+
+//Process - It is an Object in node js jo hamee information provide karti hai about , and control over , the current Node.js process
+
+and process.agrv // Work as Array 
+and when we call or js file in node server then 
+node script.js hello kushal akshat dev
+likhte hai to baad valee name bhii keys ban jati hai arrays me aisa
+
+
+
+
+
+Ex file ki property ko dusere file me Use karna ho to ek term hoti hai 
+"module.exports"----  
+Ager merko ek file se dusari file me data bhejna ho to me "module.exports" ka use karnege 
+Or Vo file ka data import hua hai to useko Access karne ke liye han 
+--  require()  Ka use karte hai :
+
+WE CAN ALSO TRANSFER DATA IN ANOTHER DIRECTORY 
+
+
+  Kaisee karte hai 
+  pehle sabhii files me content likh lo module.exports form me then :-
+  ek File benao index.js name ki useko sara data dedo 
+  const app = require("./apple");
+const bannana = require("./bannana");
+const orange = require("./orange");
+
+let fruits = [app, bannana , orange];
+
+module.exports = fruits;
+
+Iss form me then Dursri file me jao or 
+const fruits = require(Directory name) likho dusari directory ka data aa jayega 
+orr main point require hamesha index.js ko hi dhundeta hai isliye index.js file me hi sara data likhee useko export karwana chahiye 
+
+
+
+//////////////////////////////////////////////////////////////////
+NPM ( NODE PACKAGE MANAGER)
+1. library of packages
+2. Command line Tools
+
+Basically ye tab use Hota hai jab
+-- Hame kisi or developer ka code likhna hita hai to
+Packages install karne padte hai 
+
+//Paackage lock Json me to Konsi konsi depdenries ka konsa version hai ye pet achata hai 
+//Package json me Descriptive and Functiion meta Deta ki Details milti hai as a name, version , dependeries
+
+
+-- In Node Expect of modeule.export or request 
+------We mainly use Export and Import
+=========Or Jisss bhii directory me hamee import export karena hai veha hamee ek package json name se file benanai hogi or 
+usme key or value pair dalena padega--
+        "type" : "modeule"
+    -- Compulsory hai 

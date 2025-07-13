@@ -1,0 +1,67 @@
+In Express firstly we understand about Library and framework
+--- Dono ka matlb same hota hai ki kisi dusere ka benaya hua code use karana , But isme thode Key Diff bhi hote hai 
+Library : -  Used to perform some specific task  -- Chota mota kaam karti hai jaisee Axios -- Api fetch karti hai
+Framework : - Used to define the structure of code or web app ka sturcture kaisa hona chahiye aisa
+ex - Express
+
+-- Express mainly used to develop web application 
+--1. Listen for incoming request
+--2. Parse Incoming request
+--3. Match responce with routes -- Routes = /help , /about , etc
+--4. Respone route ke according 
+
+
+Ismee ek Function hota hai jo bahot famous hai Listen function - (.listen)
+ It help to listen incomming request
+
+ Ek (.app) karke bhii function hota hai jo har tarike ki req send kar sakta hai 
+ Or iss function me by default 2 perameters hote hai (req, res)   -- (request , responce)
+ 
+ -- Req ek pura Object hai ek Isme Bahot sari Properties hoti hai jiseko ham use kar sakte hai 
+
+ Koi Data bhejana hai  String , boolean , object Ya Character ki form me to ham 
+ (res.send) ka use kar sakte hai -- Ye HTML me responce send kar dega
+
+
+// Ab hemari site me Diff Diff route hote hai 
+Isme (.get) Method ka use karte hai 
+
+Or han Ek Path ke liye ek hi responce send Hota hai 
+(.get("/"))  yee Koi specific path ke liye use hota hai 
+(.get("*")) Ye sare routes ke liye hai jo exists bhi nahi karte unke liye bhi hai 
+
+
+
+
+
+
+
+Nodemon-
+Why We use this version beacuse:
+        Whenever we will some scripts in our file or add on any data so we have to start and stop the server Again and again,
+         but to overwrite the Problem of cancel or restart the server We use Nodemon
+
+Path Permeter - 
+in it there are thoushands of routes present in insta page like micropsoft , google , or any other user name 
+but for every page we could'nt write any personal Route we use Variables in route , So How we use it :=
+    by using .get("/:)  ":" For Variables
+    ex- 
+
+
+    app.get("/:username/:id", (req, res) => {
+//     let {username , id} = req.params;
+//     let htmlStr = `<h1>Welcome to the page of ${username}.</h1>`;
+//     res.send(htmlStr);
+//     console.log(req.params);
+// });
+
+
+
+Query String-  (?q=data)
+using 
+
+Main 4 uses of Express
+1 listen 
+2. parse
+3. routes check karena 
+4. Then responce karena 
