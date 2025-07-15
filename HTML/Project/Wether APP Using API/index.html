@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   <div id = "header">
+    <h1>Weather App</h1>
+   </div>
+
+   <section id = "Body">
+            <h2>Enter Longitude and Latitude</h2>
+
+    <div id = conatiner>
+        <form>
+            <input type="text" class = "Box" placeholder="Longitude" id = "lat">
+            <input type="text" class = "Box" placeholder="Latitude" id = "lon">
+        </form>
+        
+
+        <button id = "button" onclick = "getData()">Check Weather Condition</button>
+
+       
+        <div id = "data">
+            <p><strong>Country:</strong> <span id="cou"></span></p>
+            <p><strong>City:</strong> <span id="city"></span></p>
+            <p><strong>Temperature:</strong> <span id="temp"></span></p>
+            <p><strong>Humidity:</strong> <span id="humidity"></span></p>
+        </div>
+    </div> 
+    
+
+
+</section>
+</body>
+<script src = "index.js"></script>
+</html>

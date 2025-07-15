@@ -36,7 +36,7 @@ Or han Ek Path ke liye ek hi responce send Hota hai
 
 
 
-Nodemon-
+***** Nodemon- *****: ---
 Why We use this version beacuse:
         Whenever we will some scripts in our file or add on any data so we have to start and stop the server Again and again,
          but to overwrite the Problem of cancel or restart the server We use Nodemon
@@ -65,3 +65,74 @@ Main 4 uses of Express
 2. parse
 3. routes check karena 
 4. Then responce karena 
+
+
+
+
+
+
+
+
+// Templetes are fixed Layout 
+ex - (/: username) - This is an route and also an exmaple of Templete or Routes
+
+It is like an Blue Print 
+
+
+// EJS(Embedded)
+
+It can be use by calling 
+app.get("view engine" , "ejs");
+here View means Templete  
+
+
+When we have to send and string boolen char to route we manually use 
+-------- res.send -----
+But when we have to send large file or a whole templete then we use 
+--------- res.render ---------
+
+
+
+We save the Templetes in view File 
+-- In this view file we create any .ejs file and and in index we write 
+app.render(name.ejs); to call the file or In the place of place we have to write the name of our file 
+
+
+
+
+///View Directory ------------------------
+
+const path = require("path");
+app.set("views", path.join(__dirname, "views"))
+
+It is used to join the paths and here ___dirname is defined as Directory name which is index.js 
+jaise backend/ejsDir ---- Ye dono milke currect path denge views ka 
+
+
+Matlb server ka exect path define kar rehe hai 
+
+--- Jab bhii templete ka use karena hai tab ham Path ka use karenge 
+
+ 
+// Interpolation Syntax----  Making our code Dynamic (Jaise run time pe chije change ho rehi hai waisee hi live chijo ko chnage karena)
+
+`  ` --  This symbol is known as backticks
+
+Normal Html , css me ham `This is a ${name}` Likhte kis bhi return ya koi bhi variable ka data priint karwane ke liye 
+But in EJS we manualluy use backticks sign to embeded full ejs file anf This is know as "Interpolation Syntax"
+
+
+----------To make code dynamically we uses:= 
+<% 'Scriptlet' tag, for control-flow, no output
+<%_ ‘Whitespace Slurping’ Scriptlet tag, strips all whitespace before it
+<%= Outputs the value into the template (HTML escaped)
+<%- Outputs the unescaped value into the template
+<%# Comment tag, no execution, no output
+<%% Outputs a literal '<%'
+%> Plain ending tag
+-%> Trim-mode ('newline slurp') tag, trims following newline
+_%> ‘Whitespace Slurping’ ending tag, removes all whitespace after it
+
+
+
+Parassing data to EJS
