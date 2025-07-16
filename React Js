@@ -1,0 +1,30 @@
+Component is Like A Fucntion we can use it Many Time in our code One its defined in code.. (reusable) -- ex- We create a button and we use the same button many time in code
+
+--------- When we have to use same component we Will invoke The component(call or Render)
+----------Render means Kisi Chij ko bar bar call karwana or Display karwana 
+
+---------- Herarcy means components of a object 
+---Like := video 
+             |
+          ___|_______
+          |     |     |
+    thumbnail  Descri  like
+
+    They all are herarcy of Video We can use all of then multiple time
+
+---- In React Har ek component ka HTML , CSS , JS alag hai 
+
+------IN React we write the coode in JSX Form (By addling Html)
+
+************************ JSX ****************************88
+-- It is not JS 
+Babel is a tool which convert the JSX into JS 
+
+
+-- Mainlyy we write our code in app.js then we will export the app.js to main or index.js via root and this root is connected to the Index.html
+
+
+
+----Work of Index.html is to create root element and connect it to main
+
+main ka kaam hai app component ko root me render karena 

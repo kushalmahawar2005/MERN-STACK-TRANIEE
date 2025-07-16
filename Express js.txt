@@ -135,4 +135,8 @@ _%> ‘Whitespace Slurping’ ending tag, removes all whitespace after it
 
 
 
-Parassing data to EJS
+// Get Data From Our database:-
+
+To get our data from the database we have to require the data.json file
+how to write : = 
+const 

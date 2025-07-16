@@ -1,0 +1,51 @@
+{
+    "cats" : {
+        "name" : "cats",
+        "followers" : 25000,
+        "following" : 5,
+        "posts" : [
+            {
+            "image" : "https://plus.unplash.com/premium_photo",
+            "likes": 2000,
+            "comments" : 17
+        },
+        {
+            "image": "https://plus.unplash.com/premium_photo",
+            "likes" : 312,
+            "comments" : 19
+        },
+        {
+            "images" : "https://plus.unplash.com/premium_photo",
+            "likes" : 1065,
+            "comments" : 200
+
+        }
+    ]
+},
+
+
+"dogs" : {
+     "name" : "dogs",
+        "followers" : 28000,
+        "following" : 45,
+        "posts" : [
+            {
+            "image" : "https://plus.unplash.com/premium_photo",
+            "likes": 2000,
+            "comments" : 17
+        },
+        {
+            "image": "https://plus.unplash.com/premium_photo",
+            "likes" : 312,
+            "comments" : 19
+        },
+        {
+            "images" : "https://plus.unplash.com/premium_photo",
+            "likes" : 1065,
+            "comments" : 200
+
+        }
+    ]
+
+}
+}

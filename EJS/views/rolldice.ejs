@@ -6,7 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Dice give value : <%= %>
+    <h1>Dice give value : <%= dicVal %>
+        <% if(dicVal == 6) { %>
+       <h2>Nice, Roll Dice Again!</h2>
+    <%   }%>
     </h1>
 </body>
 </html>
+
