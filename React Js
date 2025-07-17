@@ -28,3 +28,19 @@ Babel is a tool which convert the JSX into JS
 ----Work of Index.html is to create root element and connect it to main
 
 main ka kaam hai app component ko root me render karena 
+
+
+When we have to use inline css we have to define object and pass the valuee or name of object in {}
+
+ex:  
+
+let a = {
+    color : red
+}
+
+
+<h2 style = (a)> Hello</h2> 
+
+When we have to use A temprary text box in our html so we have to use 
+<h2 contentEditable = "true" className='true'>React</h2> 
+It create a text box

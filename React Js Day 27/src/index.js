@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+// const element = React.createElement('h1', {}, 'hello from withour jsx');
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <>
-<h1>Hello</h1>
-<h2>Hi</h2> 
+<h1 className='Ex'>This is my Second Day of React Js</h1>
+<h2 contentEditable = "true" className='true'>React</h2> 
 </>
 );
 
