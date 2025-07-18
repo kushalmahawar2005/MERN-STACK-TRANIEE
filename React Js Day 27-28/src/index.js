@@ -7,8 +7,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <>
-<h1 className='Ex'>This is my Second Day of React Js</h1>
-<h2 contentEditable = "true" className='true'>React</h2> 
+<h1 className='true'><App/></h1>
 </>
 );
 
@@ -22,3 +21,6 @@ reportWebVitals();
 //React Fragement
 //Div
 // <> </>
+
+// <h1 className='Ex'>This is my Second Day of React Js</h1>
+{/* <h2 contentEditable = "true" className='true'>React</h2>  */}
