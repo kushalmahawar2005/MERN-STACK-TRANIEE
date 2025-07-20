@@ -1,0 +1,74 @@
+Har component ki alag se file hogi
+
+
+For Import And Export Single File
+we use Import =
+import Title from './Title'
+for export this file
+export Default Title;
+
+
+for Import and Export multiple files- 
+export {Title};
+inport {Title} from "./Title"
+
+React Fragement---
+Means a small part==
+
+Ager app harr jagah div or childer class ka use nahi karena chahetee to ham
+<> </> Iseka bhii use kar sakte hai
+
+
+
+// JSX me jab bhii ham { } curlie brackets me koi bhi code likhte hai to vo pure JS ki tarah treat hota hai 
+ 
+
+ Map Method 
+ arr.map((variable (a), index) => (  // a move or travel or access to all the index
+    <h1 key = {index}>{a}</h1>
+ ))
+
+
+// React Hooks (It is like a Loop)
+
+Hooks Type - UseState (Kisi object ki state me change karena -- Matlb object me koi bhi value hai useko update krne ke liye kaam ata hai)
+[variable name, function name] function is used to handle the error
+
+const [count , setCount] = useState('0' // This is initial value);
+
+
+//To Print the event Object we have to pass parameters event in function 
+
+
+//State in React
+
+We use it to re-render any object
+
+
+There are total 15 Hooks in React   
+
+
+
+What is closure.?
+
+
+When we have two function outer and inner 
+In outer function we declare a variable b 
+and in inner function we declare a variable a 
+now in variable a I have to add a + b;
+but in inner we have b but not have a - so we sure Closure property to access the b variable of outer in inner 
+
+ex:
+
+function outer() {
+    let b = 10;
+    function inner() {
+        let a = 20;
+        console.log(a + b);
+    }
+    return inner;
+}
+
+let inner = outer();
+then call inner(); // This is an closure method
+we can get our solution 
