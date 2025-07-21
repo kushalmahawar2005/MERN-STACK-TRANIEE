@@ -44,3 +44,17 @@ let a = {
 When we have to use A temprary text box in our html so we have to use 
 <h2 contentEditable = "true" className='true'>React</h2> 
 It create a text box
+
+
+With the help of Use effect we will Fetch the API or update it 
+UseEffect - It is like an Arrow function and we use setInterval in it 
+
+
+UseContect Hook - 
+It is used to access Global data 
+There are two porperty in it - createContext , useContext
+
+Ager new value create karenaa hai to createContext
+Ager use arena hai use value ko to useContext
+
+There is also a tern children props which is an a default prop which is used to acces the content
