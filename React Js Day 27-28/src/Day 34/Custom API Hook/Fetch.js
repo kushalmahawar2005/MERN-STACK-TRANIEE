@@ -1,3 +1,5 @@
+console.log("Fetting the Api Key");
+
 import React from 'react';
 
 function useFetch(url) {
