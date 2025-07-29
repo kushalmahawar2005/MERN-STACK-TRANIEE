@@ -27,7 +27,7 @@ function ThemeProvider({children}) {
             color : theme === 'dark' ? '#fff' : '#000',
             borderRadius : '5px',
             textAlign : 'center'
-            fontSize: '10px'
+            fontSize: '12px'
         };
 
         return (
