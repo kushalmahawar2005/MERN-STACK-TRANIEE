@@ -1,0 +1,39 @@
+import './App.css'
+import Button from '@mui/material/Button';
+import Checkbox from '@mui/material/Checkbox';
+import FormGroup from '@mui/material/FormGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import DeleteIcon from '@mui/icons-material/Delete';
+
+function App() {
+  let handleClick = () => {
+      console.log("Button was clicked");
+    }
+
+  return (
+   
+    <>
+      <h1>Material Ui</h1>
+      <Button startIcon={<DeleteIcon />} variant="contained" onClick={handleClick}>Click Me!</Button>
+      <Button variant="outlined" onClick={handleClick} color = "error" size = "small">Click Me2! </Button>
+       <FormGroup>
+      <FormControlLabel control={<Checkbox defaultChecked />} label="Label" />
+       <FormControlLabel required control={<Checkbox />} label="Required" />
+      <FormControlLabel disabled control={<Checkbox />} label="required" />
+    </FormGroup>
+
+    </>
+  );
+}
+
+export default App;
+
+
+Whenever We using form in for site then for search or anything we have to implement useState to handle changes
+
+Mainly pehle to value of text ke data ko handle karne ke liye hame function benana padeta hai jiseme useState ke function me ham Value update karte hai using
+setCity(event.target.value)
+
+or Submit karne pe page reload na ho pura to useko handle karne ke liye ham 
+handle submit ka use karte hai jiseme ham ek to event.preventDefault() Ka use karte hai 
+then setCity("") null kardo submit hone ke baad;
