@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.gudu {
+    @apply mt-[20px] font-bold bg-blue-600 italic h-[20px]   justify-center
+}

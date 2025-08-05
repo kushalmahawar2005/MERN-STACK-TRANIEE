@@ -33,6 +33,7 @@ export default function SearchBox({ updateInfo }) {
 
     let handleChange =  (event) => {
          setCity(event.target.value);
+         console.log(event.target.value);
     }
 
     let handleSubmit = async (event) => {
